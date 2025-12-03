@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextStop - Explore the World</title>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+    <header class="hero">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="compass.png" alt="Compass Logo" class="logo-img">
+                <span>NextStop</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li> <!-- Ensure Home links to index.html -->
+                <li><a href="About.html">About</a></li> <!-- Update About link to point to About.html -->
+                <li><a href="Destinations.html">Destination</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <div class="contact">
+                <span>📞 +92-312-3456789</span>
+            </div>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h1 class="hero-title">Switzerland</h1>
+            <p>Discover breathtaking destinations, one journey at a time</p>
+            <button onclick="window.location.href='Destinations.html';" class="btn">Explore Now</button>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <h2>Where you want to go?</h2>
+        <form class="search-form">
+            <input type="text" placeholder="Where to go?" required>
+            <input type="date" required>
+            <select required>
+                <option value="">Travel type</option>
+                <option value="adventure">Adventure</option>
+                <option value="leisure">Leisure</option>
+                <option value="business">Business</option>
+            </select>
+            <button type="submit" class="btn" onclick="window.location.href='Destinations.html'">Search</button>
+        </form>
+    </section>
+
+    <!-- Popular Destination Section -->
+    <section class="popular-destination">
+        <h2>Popular Destination</h2>
+        <p>Find your next travel adventure from these popular destinations.</p>
+        <div class="destination-grid">
+            <div class="destination">
+                <img src="italy.jpg" alt="Italy">
+                <h3>Italy</h3>
+                <p>07 Places</p>
+            </div>
+            <div class="destination">
+                <img src="brazil.jpeg" alt="Brazil">
+                <h3>Brazil</h3>
+                <p>05 Places</p>
+            </div>
+            <div class="destination">
+                <img src="america.jpeg" alt="America">
+                <h3>America</h3>
+                <p>10 Places</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 NextStop. All rights reserved.</p>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>
